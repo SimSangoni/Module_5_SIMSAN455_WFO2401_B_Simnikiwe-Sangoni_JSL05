@@ -11,6 +11,11 @@ const songs = [
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
+    { title: "Lose Ends", artist: "Loyle Carner", genre: "Hip-Hop/Rap" },
+    { title: "Chill Out", artist: "RAY BLK", genre: "R&B" },
+    { title: "ZULU", artist: "Pushkin RSA", genre: "Dance" },
+    { title: "Conceited", artist: "Flo Milli", genre: "Hip-Hop/Rap" },
+    { title: "Zanzibar", artist: "DJ Maphorisa", genre: "Dance" },
     // Feel free to add even more songs
 ];
 
