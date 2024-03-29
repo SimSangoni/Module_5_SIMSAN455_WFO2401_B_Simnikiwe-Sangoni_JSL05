@@ -1,3 +1,6 @@
+const parentEL = document.getElementById("playlists")
+
+
 // Array of song objects. Add at least 5 songs with title, artist, and genre properties.
 const songs = [
     { title: "Hooked on a Feeling", artist: "Blue Swede", genre: "Pop" },
@@ -34,9 +37,11 @@ const guardians = [
 function generatePlaylist(guardians, songs) {
     // Use the map() function to create playlists for each Guardian
     // Your code here
+    const playlistContainer = document.createElement('div');
+    playlistContainer.classList.add('playlist');
+   
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
 generatePlaylist(guardians, songs);
-
 
