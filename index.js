@@ -10,7 +10,7 @@ const songs = [
     { title: "Ain't No Mountain High Enough", artist: "Marvin Gaye & Tammi Terrell", genre: "R&B" },
     { title: "Come and Get Your Love", artist: "Redbone", genre: "Rock" },
     { title: "I'm Not in Love", artist: "10cc", genre: "Pop" },
-    { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" },
+    { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" }, 
     { title: "Lose Ends", artist: "Loyle Carner", genre: "Hip-Hop/Rap" },
     { title: "Chill Out", artist: "RAY BLK", genre: "R&B" },
     { title: "ZULU", artist: "Pushkin RSA", genre: "Dance" },
@@ -21,14 +21,14 @@ const songs = [
 
 
 // Object containing each Guardian's preferred genre
-const guardians = {
-    "Star-Lord": "Rock",
-    "Gamora": "Pop",
-    "Drax": "R&B",
-    "Rocket": "Dance",
-    "Groot": "Hip-Hop/Rap",
+const guardians = [
+    {guardian:"Star-Lord", genre:"Rock"},
+    {guardian:"Gamora", genre:"Pop"},
+    {guardian:"Drax", genre:"R&B"},
+    {guardian:"Rocket", genre:"Dance"},
+    {guardian:"Groot", genre:"Hip-Hop/Rap"},
     // Add preferences for Drax, Rocket, and Groot
-};
+];
 
 // Function to generate playlist based on preferred genre
 function generatePlaylist(guardians, songs) {
