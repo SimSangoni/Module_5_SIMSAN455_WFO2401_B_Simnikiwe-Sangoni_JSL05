@@ -44,6 +44,13 @@ function generatePlaylist() {
     const playTitle = document.createElement('h2');
     playTitle.textContent = `${guardian.guardianName}'s Playlist`;
 
+    // Testing to see if my mapping and filtering will work for the genre generation
+    const guardianSongs = songs.filter(song => song.genre === guardian.genre);
+
+    
+
+
+
     playlistContainer.appendChild(playTitle);
     parentEL.appendChild(playlistContainer);
 
