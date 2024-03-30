@@ -22,11 +22,11 @@ const songs = [
 
 // Object containing each Guardian's preferred genre
 const guardians = [
-    {guardian:"Star-Lord", genre:"Rock"},
-    {guardian:"Gamora", genre:"Pop"},
-    {guardian:"Drax", genre:"R&B"},
-    {guardian:"Rocket", genre:"Dance"},
-    {guardian:"Groot", genre:"Hip-Hop/Rap"},
+    {guardianName:"Star-Lord", genre:"Rock"},
+    {guardianName:"Gamora", genre:"Pop"},
+    {guardianName:"Drax", genre:"R&B"},
+    {guardianName:"Rocket", genre:"Dance"},
+    {guardianName:"Groot", genre:"Hip-Hop/Rap"},
     // Add preferences for Drax, Rocket, and Groot
 ];
 
@@ -35,15 +35,22 @@ function generatePlaylist() {
     // Use the map() function to create playlists for each Guardian
     // Your code here
     const parentEL = document.getElementById("playlists")
+// This function goes into the guardians list, and looks into each of the guardians to make their own div container
+    guardians.forEach(guardian => {
 
     const playlistContainer = document.createElement('div');
     playlistContainer.classList.add('playlist');
 
     const playTitle = document.createElement('h2');
-    playTitle.textContent = `Star-Lords's Playlist`;
+    playTitle.textContent = `${guardian.guardianName}'s Playlist`;
 
     playlistContainer.appendChild(playTitle);
     parentEL.appendChild(playlistContainer);
+
+    }
+
+    )
+    
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
