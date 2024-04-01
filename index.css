@@ -43,3 +43,8 @@ h2 {
     text-decoration: none; /* Remove underline on hover */
     color: #00FF00; /* Green color on hover */
 }
+
+.song-info {
+    display: flex; /* Align items horizontally */
+    gap: 10px;
+}
