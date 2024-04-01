@@ -13,8 +13,17 @@ const songs = [
     { title: "Fooled Around and Fell in Love", artist: "Elvin Bishop", genre: "Rock" }, 
     { title: "Lose Ends", artist: "Loyle Carner", genre: "Hip-Hop/Rap" },
     { title: "Chill Out", artist: "RAY BLK", genre: "R&B" },
+    { title: "I'm Not OK", artist: "H.E.R.", genre: "R&B" },
+    { title: "One Unread", artist: "Amber Olivier", genre: "R&B" },
+    { title: "1 Thing", artist: "Amerie", genre: "Pop" },
+    { title: "Wo Wo Wo", artist: "Krept & Konan", genre: "Hip-Hop/Rap" },
+    { title: "Self Love", artist: "Metro Boomin", genre: "Hip-Hop/Rap" },
+    { title: "21 Questions", artist: "50 Cent", genre: "Hip-Hop/Rap" },
     { title: "ZULU", artist: "Pushkin RSA", genre: "Dance" },
     { title: "Conceited", artist: "Flo Milli", genre: "Hip-Hop/Rap" },
+    { title: "Amazwe", artist: "Kabza De Small", genre: "Dance" },
+    { title: "Take It All", artist: "Da Capo", genre: "Dance" },
+    { title: "Shooting Stars", artist: "Bag Raiders", genre: "Dance" },
     { title: "Zanzibar", artist: "DJ Maphorisa", genre: "Dance" },
     // Feel free to add even more songs
 ];
