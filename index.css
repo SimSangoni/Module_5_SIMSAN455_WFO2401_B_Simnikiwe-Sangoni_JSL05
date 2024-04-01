@@ -34,6 +34,7 @@ h2 {
 }
 
 .song-title {
+    margin: 10px 0;
     font-weight: bold;
     color: #FFD700; /* Gold color for song titles */
     text-decoration: underline; /* Underline effect for song titles */
