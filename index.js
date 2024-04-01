@@ -34,15 +34,15 @@ const guardians = [
 function generatePlaylist() {
     // Use the map() function to create playlists for each Guardian
     // Your code here
-    const parentEL = document.getElementById("playlists")
-// This function goes into the guardians list, and looks into each of the guardians to make their own div container
+    const parentEL = document.getElementById("playlists");
+
     guardians.forEach(guardian => {
+        const playlistContainer = document.createElement('div');
+        playlistContainer.classList.add('playlist');
 
-    const playlistContainer = document.createElement('div');
-    playlistContainer.classList.add('playlist');
-
-    const playTitle = document.createElement('h2');
-    playTitle.textContent = `${guardian.guardianName}'s Playlist`;
+        const playTitle = document.createElement('h2');
+        playTitle.textContent = `${guardian.guardianName}'s Playlist`;
+        playlistContainer.appendChild(playTitle);
 
     // Testing to see if my mapping and filtering will work for the genre generation
     const guardianSongs = songs.filter(song => song.genre === guardian.genre);
@@ -51,7 +51,6 @@ function generatePlaylist() {
 
 
 
-    playlistContainer.appendChild(playTitle);
     parentEL.appendChild(playlistContainer);
 
     }
