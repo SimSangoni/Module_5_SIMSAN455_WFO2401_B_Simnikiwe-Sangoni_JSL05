@@ -50,6 +50,11 @@ function generatePlaylist() {
             const songInfo = document.createElement('span');
             songInfo.classList.add('song-info');
             
+            const songArtist = document.createElement('p');
+            songArtist.classList.add('song-title');
+            songArtist.textContent = `${song.title} `;
+            songInfo.appendChild(songArtist);
+
         
             playlistContainer.appendChild(songInfo);
         });
